@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Unity Web Player | %UNITY_WEB_NAME%</title>
+		<script type="text/javascript" src="%UNITY_UNITYOBJECT_URL%"></script>
+		<script type="text/javascript">
+		<!--
+		function GetUnity() {
+			if (typeof unityObject != "undefined") {
+				return unityObject.getObjectById("unityPlayer");
+			}
+			return null;
+		}
+		if (typeof unityObject != "undefined") {
+			unityObject.embedUnity("unityPlayer", "%UNITY_WEB_PATH%", %UNITY_WIDTH%, %UNITY_HEIGHT%);
+		}
+		-->
+		</script>
+		<style type="text/css">
+		<!--
+		body {
+			font-family: Helvetica, Verdana, Arial, sans-serif;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		a:link, a:visited {
+			color: #666;
+		}
+		a:active, a:hover {
+			color: #fff;
+		}
+		p.header {
+			font-size: small;
+		}
+		p.header span {
+			font-weight: bold;
+		}
+		p.comment {
+			font-size: small;
+		}
+		p.footer {
+			font-size: x-small;
+		}
+		div.content {
+			margin: auto;
+			width: %UNITY_WIDTH%px;
+		}
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.missing img {
+			border-width: 0px;
+		}
+		div#unityPlayer {
+			cursor: default;
+			height: %UNITY_HEIGHT%px;
+			width: %UNITY_WIDTH%px;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<p class="header"><span>Unity Web Player | </span>%UNITY_WEB_NAME%</p>%UNITY_BETA_WARNING%
+		<img src="UnityLogoRev.png" alt "Unity Logo Reversed" width="256" height="104" />
+		<p class="comment">A simple particle pack using Shuriken particles from <a href="http://unity3d.com">Unity Technologies</a>,<br/>this package contains a collection of small explosions, flares and flames.<br/><br/>Click on the Toggle button below to choose the effect type you want to view.<br/>Select the effect from the menu displayed on the left.</p>
+		<div class="content">
+			<div id="unityPlayer">
+				<div class="missing">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<p class="comment">Primarily intended as a part of <a href="http://unity3d.com/support/online-training/">Unity Technologies Online Training Program</a><br/>this pack is fully functional and free to use in any of your games.<br/><br/>You can <a href="http://u3d.as/content/unity-technologies/simple-particle-pack/2LS">download this package from Unity's AssetStore</a>.</p>
+		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+	</body>
+</html>
